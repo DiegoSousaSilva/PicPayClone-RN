@@ -33,10 +33,14 @@ const icons = {
 const Routes = ()=>{
   return(
     <Tab.Navigator 
-      screenOptions={({ route })=>({
-        tabBarIcon : ({color, size})=>{
+      screenOptions={({ route, navigation })=>({
+        tabBarIcon : ({color, size, focused})=>{
           if (route.name === 'Pay') {
-            return <PayButton/>
+            return (
+              <PayButton focused={focused} onPress={()=>{
+                navigation.navigate('Pay');
+              }}/>
+            )
           }
           const {lib:Icon, name} = icons[route.name];
           return <Icon name={name} size={size} color={color} />
