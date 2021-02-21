@@ -2,6 +2,7 @@ import React from 'react';
 
 import { StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
+import Activities from '../../components/Activities';
 import Suggestions from '../../components/Suggestions';
 
 import { Wrapper, Header, BalanceContainer, BalanceTitle, Balance, Container} from './styles';
@@ -24,6 +25,7 @@ const Home= () => {
           </Header>
 
           <Suggestions />
+          <Activities />
         </Container>
       </Wrapper>
     </>
