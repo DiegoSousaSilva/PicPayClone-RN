@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-import Icon2 from 'react-native-vector-icons/MaterialIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import avatar from '../../images/avatar.png';
 
@@ -50,18 +50,18 @@ const Activities = () => {
             <Value>R$ 250,00</Value>
             <Divider/>
             
-            <Icon name='lock' size={25} color='#fff' /> 
+            <Ionicons name='lock-closed-outline' size={25} color='#fff' /> 
             <Date>Há 2 horas</Date>
           </Details>
 
           <Actions>
             <Option>
-            <Icon2 name='message' size={25} color='#fff' /> 
+            <Ionicons name='ios-chatbox-outline' size={25} color='#fff' /> 
             <OptionLabel>0</OptionLabel>
             </Option>
 
             <Option>
-            <Icon name='heart' size={25} color='#fff' /> 
+            <Ionicons name='heart-outline' size={25} color='#fff' /> 
             <OptionLabel>0</OptionLabel>
             </Option>  
           </Actions>
