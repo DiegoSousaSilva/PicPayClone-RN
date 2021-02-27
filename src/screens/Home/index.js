@@ -3,7 +3,9 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Activities from '../../components/Activities';
+import Banner from '../../components/Banner';
 import Suggestions from '../../components/Suggestions';
+import Tips from '../../components/Tips';
 
 import { Wrapper, Header, BalanceContainer, BalanceTitle, Balance, Container} from './styles';
 
@@ -26,6 +28,8 @@ const Home= () => {
 
           <Suggestions />
           <Activities />
+          <Tips />
+          <Banner />
         </Container>
       </Wrapper>
     </>
